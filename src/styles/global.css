@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply overflow-x-hidden scroll-smooth bg-white subpixel-antialiased;
+	}
+	body {
+		@apply h-screen bg-white;
+	}
+	/* h1 {
+		@apply text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl;
+	}
+	h2 {
+		@apply mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl;
+	}
+	h3 {
+		@apply mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl;
+	}
+	h4 {
+		@apply mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl;
+	}
+	p {
+		@apply leading-7 [&:not(:first-child)]:mt-3;
+	} */
+	/* ::-webkit-scrollbar {
+		width: 0;
+		background: transparent;
+	} */
+	/* ::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #d6dee1;
+		border-radius: 10px;
+		border: 3px solid transparent;
+		background-clip: content-box;
+	} */
+}
+
+@layer components {
+	.text-border-b {
+		background: linear-gradient(to bottom, transparent 50%, #c6e6f7 50%);
+	}
+
+	.text-border-b-secondary {
+		background: linear-gradient(to bottom, transparent 50%, #fed07a 50%);
+	}
+
+	.thumbnail-image {
+		@apply max-h-[250px] min-h-[250px] object-cover transition duration-300 ease-in-out hover:scale-105;
+	}
+}

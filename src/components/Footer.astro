@@ -1,0 +1,88 @@
+---
+import Contact from './Contact/index.astro'
+---
+
+<section id="footer" class="">
+	<div class="relative"></div>
+	<div class="bg-primary-500">
+		<div class="mx-auto max-w-7xl px-3 pb-[60px] pt-[100px]">
+			<Contact />
+
+			<div class="mt-10 border-t-[3px] border-second-500">
+				<p class="text-semibold mt-6 text-base text-white">
+					&copy; 2021 Bircanvet. Tüm hakları saklıdır.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.google-maps {
+		position: relative;
+		padding-bottom: 75%;
+		height: 0;
+		overflow: hidden;
+	}
+	.google-maps iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	@media screen and (min-width: 1024px) {
+		.google-maps {
+			margin-top: 100px;
+		}
+	}
+
+	.custom-shape-divider-bottom-1707020766 {
+		position: absolute;
+		bottom: -270px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+		z-index: -1;
+	}
+
+	.custom-shape-divider-bottom-1707020766 svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 150px;
+		transform: rotateY(180deg);
+	}
+
+	.custom-shape-divider-bottom-1707020766 .shape-fill {
+		fill: #c6e6f7;
+	}
+
+	.custom-shape-divider-bottom-1707020873 {
+		position: absolute;
+		bottom: -250px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+		z-index: -1;
+	}
+
+	.custom-shape-divider-bottom-1707020873 svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 150px;
+	}
+
+	.custom-shape-divider-bottom-1707020873 .shape-fill {
+		fill: #3e3e66;
+	}
+</style>

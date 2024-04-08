@@ -1,0 +1,77 @@
+---
+import ContactForm from "./ContactForm.svelte"
+import GoogleMaps from "./GoogleMaps.svelte"
+---
+
+<div>
+	<div class="mx-auto max-w-3xl text-center">
+		<h2 class="text-2xl font-bold leading-[4rem] tracking-wide text-white">Bir sorunuz mu var?</h2>
+		<p class="mt-3 text-base font-medium text-white">
+			Hemen bizimle aşağıdaki formu doldurarak iletişime geçebilirsiniz. Size en kısa zamanda dönüş
+			sağlayacağız. Ayrıca <strong>+90 554 906 04 80</strong> numarasından bize ulaşabilirsiniz.
+		</p>
+	</div>
+	<div class="mb-14 mt-20 grid gap-6 md:grid-cols-3">
+		<div class="text-center">
+			<span class="h-16 w-16">
+				<img
+					src="/assets/icons/location.svg"
+					alt="location"
+					class="mx-auto h-16 w-16"
+					loading="lazy"
+					width={64}
+					height={64}
+				/>
+			</span>
+			<div class="mt-1.5 space-y-1 text-white">
+				<h3 class="trackin-wide text-xl font-bold">Adresimiz</h3>
+				<p class="text-base font-semibold">
+					Örnekköy, 7466. Sk. No:3/A, 35575 Karşıyaka/İzmir, Türkiye
+				</p>
+			</div>
+		</div>
+		<div class="text-center">
+			<span class="h-16 w-16">
+				<img
+					src="/assets/icons/clock.svg"
+					alt="clock"
+					class="mx-auto h-16 w-16"
+					loading="lazy"
+					width={64}
+					height={64}
+				/>
+			</span>
+			<div class="mt-1.5 space-y-1 text-white">
+				<h3 class="trackin-wide text-xl font-bold">Çalışma saatlerimiz</h3>
+				<p class="text-base font-semibold">
+					Pzt-Cum: 9:00 - 20:00 <br />
+					Cmt-Pzr: 10:00 - 20:00
+				</p>
+			</div>
+		</div>
+		<div class="text-center">
+			<span class="h-16 w-16">
+				<img
+					src="/assets/icons/phone.svg"
+					alt="phone"
+					class="mx-auto h-16 w-16"
+					loading="lazy"
+					width={64}
+					height={64}
+				/>
+			</span>
+			<div class="mt-1.5 space-y-1 text-white">
+				<h3 class="trackin-wide text-xl font-bold">Bize nasıl ulaşırsınız?</h3>
+				<p class="text-base font-semibold">
+					+90 554 906 04 80 <br />
+					bircanvet@gmail.com
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="grid gap-6 pb-[100px] lg:grid-cols-2">
+		<ContactForm client:only="svelte" />
+		<GoogleMaps />
+	</div>
+</div>

@@ -1,0 +1,27 @@
+---
+interface Props {
+	title: string
+	slug?: string
+	metadescription?: string
+}
+
+import Header from '@/components/Header/index.svelte'
+import Footer from '@/components/Footer.astro'
+import SEO from '@/components/SEO.astro'
+
+import '@/styles/global.css'
+
+const { metadescription, slug, title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<SEO {metadescription} {slug} {title} />
+
+	<Header client:only="svelte" />
+
+	<body class="font-dm">
+		<slot />
+		<Footer />
+	</body>
+</html>
