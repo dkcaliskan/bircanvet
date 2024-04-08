@@ -42,7 +42,6 @@
 		loading = true
 		buttonText = 'Gönderiliyor...'
 		ButtonState = 'loading'
-		console.log(import.meta.env.PUBLIC_EMAILJS_SERVICE_ID)
 		try {
 			const response = await emailjs.send(
 				import.meta.env.PUBLIC_EMAILJS_SERVICE_ID,
