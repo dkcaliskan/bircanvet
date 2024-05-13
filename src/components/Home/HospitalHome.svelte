@@ -4,6 +4,8 @@
 	import { backOut } from 'svelte/easing'
 	import { inview } from 'svelte-inview'
 
+	import { Image } from '@unpic/svelte'
+
 	let isInView = false
 
 	register()
@@ -73,13 +75,12 @@
 						{#each photos as photo, i}
 							<swiper-slide lazy="true">
 								<div key={i}>
-									<img
+									<Image
 										src={photo}
-										loading="lazy"
-										alt={`hospital photo ${i}`}
-										class="h-full max-h-[200px] min-h-[200px] w-full rounded-lg object-cover shadow-lg"
+										layout="constrained"
 										width={500}
 										height={250}
+										alt={`hospital photo ${i}`}
 									/>
 								</div>
 							</swiper-slide>
