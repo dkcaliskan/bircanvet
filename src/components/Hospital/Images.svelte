@@ -9,8 +9,6 @@
 
 	import { Image } from '@unpic/svelte'
 
-	const body = document.querySelector('body')
-
 	const openModal = (src: string, alt: string, width: number, height: number) => {
 		activeImage.src = src
 		activeImage.alt = alt
